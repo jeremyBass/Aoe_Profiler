@@ -1,3 +1,17 @@
+$('hide_profiler').observe('click', function(event) {
+	$$('hide_profiler').each(function(element) {
+		element.toggleClassName("hidden_profiler");
+		if (element.attr("herf") == "#") {event.stop();}
+		if (element.innerHTML == "Hide")element.update("Show");
+		if (element.innerHTML == "Show")element.update("Hide");
+	});
+	$$("#profiler").each(function(element) {
+		element.toggleClassName("active");
+	});
+    
+});
+
+
 $$("#profiler .toggle").each(function(element) {
     element.observe("click", function(event) {
         Event.element(event).up("li").toggleClassName("collapsed");
