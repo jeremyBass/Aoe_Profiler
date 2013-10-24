@@ -5,6 +5,8 @@
   font-family: Arial;
   font-size: 14px;
   height: 2em;
+  max-height:35%;
+  overflow-y:scroll;
   left: 0;
   line-height: 14px;
   opacity: 0.85;

@@ -161,7 +161,7 @@ class Aoe_Profiler_Block_Profiler extends Mage_Core_Block_Abstract {
 				$url .= (strpos($url, '?') === false) ? '?' : '&';
 				$url .= 'profile=1#profiler';
 
-				$output .= '<div id="profiler"><a href="'.$url.'" id="hide_profiler" class="hidden_profiler">Show</a><div id="prowrap">
+				$output .= '<div id="profiler"><a href="'.$url.'" id="hide_profiler" class="hidden_profiler"><i class="fa-eye"/>Show</a><div id="prowrap">
 					<p class="hint-small">(This message can be hidden in System > Configuration > Developer > Profiler.)</p>
 					<p class="hint">Add <a href="'.$url.'">?profile=1</a> to the url to enable <strong>profiling</strong>.</p>
 					
@@ -195,7 +195,7 @@ class Aoe_Profiler_Block_Profiler extends Mage_Core_Block_Abstract {
 
 
 
-		$output .= '<div id="profiler" class="active"><a href="#" id="hide_profiler">Hide</a><div id="prowrap"><h1>Profiler</h1>';
+		$output .= '<div id="profiler" class="active"><a href="#" id="hide_profiler"><i class="fa-eye-slash"/>Hide</a><div id="prowrap"><h1>Profiler</h1>';
 
 		$hideLinesFasterThan = intval(Mage::getStoreConfig('dev/debug/hideLinesFasterThan'));
 
