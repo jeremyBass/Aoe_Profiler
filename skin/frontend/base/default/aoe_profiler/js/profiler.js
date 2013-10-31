@@ -3,8 +3,8 @@
 		$('#hide_profiler').on("click",function(e){
 			if($('#hide_profiler').attr("herf") == "#")e.preventDefault();
 
-			if($('#hide_profiler').text().trim()=="Hide"){$('#hide_profiler').html("<i class='fa-eye'/>Show");}
-			else if($('#hide_profiler').text().trim()=="Show"){$('#hide_profiler').text("<i class='fa-eye-slash'/>Hide");}
+			if($('#hide_profiler').text().trim()=="Hide"){$('#hide_profiler').html("<i class='fa-eye'></i>Show");}
+			else if($('#hide_profiler').text().trim()=="Show"){$('#hide_profiler').html("<i class='fa-eye-slash'></i>Hide");}
 			$("#profiler").toggleClass("active");
 		});
 	});
